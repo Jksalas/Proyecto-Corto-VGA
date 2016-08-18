@@ -20,21 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Controlador_VGA_tb;
 
-//Declaración de entradas
+//DeclaraciÃ³n de entradas
 	reg clk_tb;
 	reg reset_tb;
-	reg [2:0] sw_tb;
+	reg [2:0] rgbswitches_tb;
 
-//Declaración de salidas
+//DeclaraciÃ³n de salidas
 	wire [2:0] rgbtext_tb;
 	wire hsync_tb;
 	wire vsync_tb;
 		
-//Instanación del DUT		
+//InstanaciÃ³n del DUT		
 	Controlador_VGA dut(
 	.clk(clk_tb),
 	.reset(reset_tb),
-	.sw (sw_tb),
+	.rgbswitches (rgbswitches_tb),
 	.rgbtext (rgbtext_tb),
 	.hsync (hsync_tb),
 	.vsync (vsync_tb)
